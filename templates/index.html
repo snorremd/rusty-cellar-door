@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block title %}Index{% endblock title %} {% block head %} {{ super() }} {% endblock head %}
+{% block content %}
+<section class="welcome">
+    {% if username %}
+    <h1>Welcome back<br />{{ username }}</h1>
+    <a href="/logout">Logout</a>
+    {% else %}
+    <h1>Rusty Cellar Door</h1>
+    <a href="/login">Login with your credentials</a>
+    {% endif %}
+</section>
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %} {% block title %} Login {% endblock title %} {% block head %} {{ super() }} {% endblock head
+%} {% block content %}
+<form class="form" action="/login" method="post">
+    <h1 class="form-title">Rusty Cellar Door</h1>
+    {% if error %}
+    <p class="error">{{error}}</p>
+    {% else %}
+    <p>Log in with your credentials.</p>
+    {% endif %}
+    <label class="form-label" for="username">Username</label>
+    <input class="form-input" type="text" id="username" name="username" required>
+
+    <label class="form-label" for="password">Password</label>
+    <input class="form-input" type="password" id="password" name="password" required>
+
+    <input type="hidden" name="redirect" value="{{redirect}}">
+
+    <input class="form-submit" type="submit" value="Submit">
+</form>
+{% endblock content %}

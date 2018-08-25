@@ -1,0 +1,106 @@
+/* https://coolors.co/05668d-427aa1-ebf2fa-679436-a5be00 */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.fa-home {
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+    color: #08a787;
+}
+
+.main {
+    display: flex;
+    justify-content:  center;
+    max-width: 100%;
+    padding-top: 10vh;
+}
+
+.content {
+    display: flex;
+    max-width: 100%;
+    background-color: #08a787;
+    color: #f7f7f7;
+    box-shadow: 1px 1px 2px 1px rgba(136, 128, 128, 0.603);
+    text-align: center;
+    padding: 2em;
+}
+
+.content a {
+    color: #f7f7f7;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    color: #f7f7f7;
+    background-color: #08a787;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 0 0 rbga(0, 0, 0, .5);
+    text-align: center;
+    padding: 1em;
+}
+
+.footer a {
+    color: #e6ebe0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-label {
+    margin-bottom: .5em;
+    font-weight: bolder;
+}
+
+.form-input {
+    margin-bottom: .5em;
+    padding: .5em;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.16);
+}
+
+.form-submit {
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #08a787;
+    font-weight: bolder;
+    border: none;
+    padding: .5em;
+    margin-top: 1em;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+}
